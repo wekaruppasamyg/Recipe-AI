@@ -7,7 +7,7 @@
     "diet_type": "vegetarian",
     "prep_time": 30,
     "calories": 450,
-    "image_url": "https://loremflickr.com/800/500/indian,paneer?lock=1",
+    "image_url": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
     "tags": "curry, dinner, north indian"
   },
   {
@@ -18,7 +18,7 @@
     "diet_type": "vegan",
     "prep_time": 15,
     "calories": 220,
-    "image_url": "https://loremflickr.com/800/500/chickpea,salad?lock=2",
+    "image_url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80",
     "tags": "salad, healthy, lunch"
   },
   {
@@ -29,7 +29,7 @@
     "diet_type": "vegetarian",
     "prep_time": 25,
     "calories": 600,
-    "image_url": "https://loremflickr.com/800/500/margherita,pizza?lock=3",
+    "image_url": "https://images.unsplash.com/photo-1604382355076-af4b0eb60143?auto=format&fit=crop&w=800&q=80",
     "tags": "pizza, dinner, cheese"
   },
   {
@@ -40,7 +40,7 @@
     "diet_type": "non-vegetarian",
     "prep_time": 25,
     "calories": 350,
-    "image_url": "https://loremflickr.com/800/500/grilled,chicken?lock=4",
+    "image_url": "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=800&q=80",
     "tags": "protein, high-protein, grill"
   },
   {
@@ -51,7 +51,7 @@
     "diet_type": "non-vegetarian",
     "prep_time": 20,
     "calories": 400,
-    "image_url": "https://loremflickr.com/800/500/egg,fried,rice?lock=5",
+    "image_url": "https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=800&q=80",
     "tags": "rice, quick, dinner"
   },
   {
@@ -62,7 +62,7 @@
     "diet_type": "vegan",
     "prep_time": 35,
     "calories": 280,
-    "image_url": "https://loremflickr.com/800/500/lentil,soup?lock=6",
+    "image_url": "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=800&q=80",
     "tags": "soup, healthy, winter"
   },
   {
@@ -73,7 +73,7 @@
     "diet_type": "keto",
     "prep_time": 20,
     "calories": 320,
-    "image_url": "https://loremflickr.com/800/500/avocado,egg?lock=7",
+    "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
     "tags": "keto, breakfast, low-carb"
   },
   {
@@ -84,7 +84,7 @@
     "diet_type": "vegan",
     "prep_time": 20,
     "calories": 260,
-    "image_url": "https://loremflickr.com/800/500/vegetable,stir,fry?lock=8",
+    "image_url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80",
     "tags": "stir-fry, healthy, quick"
   },
   {
@@ -95,7 +95,7 @@
     "diet_type": "non-vegetarian",
     "prep_time": 25,
     "calories": 480,
-    "image_url": "https://loremflickr.com/800/500/beef,tacos?lock=9",
+    "image_url": "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80",
     "tags": "tacos, dinner, spicy"
   },
   {
@@ -106,7 +106,7 @@
     "diet_type": "vegetarian",
     "prep_time": 40,
     "calories": 380,
-    "image_url": "https://loremflickr.com/800/500/masala,dosa?lock=10",
+    "image_url": "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80",
     "tags": "breakfast, south indian, crispy"
   },
   {
@@ -117,7 +117,7 @@
     "diet_type": "vegan",
     "prep_time": 35,
     "calories": 420,
-    "image_url": "https://loremflickr.com/800/500/buddha,bowl?lock=11",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "tags": "bowl, healthy, meal-prep"
   },
   {
@@ -128,7 +128,7 @@
     "diet_type": "non-vegetarian",
     "prep_time": 25,
     "calories": 520,
-    "image_url": "https://loremflickr.com/800/500/shrimp,pasta?lock=12",
+    "image_url": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
     "tags": "pasta, seafood, dinner"
   },
   {
@@ -139,7 +139,7 @@
     "diet_type": "vegan",
     "prep_time": 30,
     "calories": 310,
-    "image_url": "https://loremflickr.com/800/500/chana,masala?lock=13",
+    "image_url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80",
     "tags": "curry, protein, vegan"
   },
   {
@@ -150,7 +150,7 @@
     "diet_type": "keto",
     "prep_time": 20,
     "calories": 400,
-    "image_url": "https://loremflickr.com/800/500/salmon,asparagus?lock=14",
+    "image_url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80",
     "tags": "keto, seafood, low-carb"
   },
   {
@@ -172,7 +172,7 @@
     "diet_type": "vegan",
     "prep_time": 40,
     "calories": 180,
-    "image_url": "https://loremflickr.com/800/500/sambar,indian-food?lock=101",
+    "image_url": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
     "tags": "south indian, lunch, side dish"
   },
   {
@@ -183,7 +183,7 @@
     "diet_type": "vegan",
     "prep_time": 20,
     "calories": 90,
-    "image_url": "https://loremflickr.com/800/500/rasam,indian-food?lock=102",
+    "image_url": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
     "tags": "south indian, soup, side dish"
   },
   {
@@ -216,7 +216,7 @@
     "diet_type": "vegan",
     "prep_time": 20,
     "calories": 140,
-    "image_url": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80",
+    "image_url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
     "tags": "south indian, vegetables, side dish"
   },
   {

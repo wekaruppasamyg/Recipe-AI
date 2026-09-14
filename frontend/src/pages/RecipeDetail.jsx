@@ -40,12 +40,18 @@ export default function RecipeDetail() {
     .map((step) => step.trim())
     .filter(Boolean);
 
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&q=80";
+
   return (
     <div className="page">
       <img
         className="detail-image"
-        src={recipe.image_url || "https://placehold.co/600x300?text=Recipe"}
+        src={recipe.image_url || FALLBACK_IMAGE}
         alt={recipe.title}
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src = FALLBACK_IMAGE;
+        }}
       />
       <h1>{recipe.title}</h1>
       <p className="meta">
