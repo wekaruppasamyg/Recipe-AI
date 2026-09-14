@@ -64,3 +64,37 @@ def get_favorites(user_id: int, db: Session = Depends(get_db)):
     if not liked_ids:
         return []
     return db.query(models.Recipe).filter(models.Recipe.id.in_(liked_ids)).all()
+
+
+@router.delete("/{recipe_id}")
+def delete_recipe(recipe_id: int, db: Session = Depends(get_db)):
+    recipe = db.query(models.Recipe).filter(models.Recipe.id == recipe_id).first()
+    if not recipe:
+        raise HTTPException(status_code=404, detail="Recipe not found")
+    db.delete(recipe)
+    db.commit()
+    return {"status": "ok", "message": f"Recipe {recipe_id} deleted"}
+
+
+@router.post("/seed/populate")
+def populate_recipes(db: Session = Depends(get_db)):
+    from pathlib import Path
+    import json
+    recipes_file = Path(__file__).resolve().parent.parent / "sample_recipes.json"
+    if not recipes_file.exists():
+        raise HTTPException(status_code=404, detail="sample_recipes.json not found")
+
+    with open(recipes_file, "r", encoding="utf-8") as f:
+        recipes = json.load(f)
+
+    existing = {r.title: r for r in db.query(models.Recipe).all()}
+    added = 0
+    for r in recipes:
+        title = r.get("title")
+        if title not in existing:
+            db.add(models.Recipe(**r))
+            added += 1
+
+    db.commit()
+    return {"status": "ok", "added": added}
+

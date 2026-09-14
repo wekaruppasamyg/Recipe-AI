@@ -18,11 +18,14 @@ export default function Home() {
       setError("");
       try {
         if (user) {
-          const data = await api.recommendForUser(user.id, 12);
-          setRecipes(data);
+          let data = await api.recommendForUser(user.id, 12);
+          if (!data || data.length === 0) {
+            data = await api.listRecipes();
+          }
+          setRecipes(data || []);
         } else {
           const data = await api.listRecipes();
-          setRecipes(data);
+          setRecipes(data || []);
         }
       } catch (e) {
         setError(e.message);

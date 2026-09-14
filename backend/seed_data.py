@@ -3,6 +3,7 @@ Run this once to create the SQLite DB and populate it with sample recipes:
     python seed_data.py
 """
 import json
+from pathlib import Path
 from database import engine, Base, SessionLocal
 import models
 
@@ -11,7 +12,8 @@ def seed():
     Base.metadata.create_all(bind=engine)
     db = SessionLocal()
 
-    with open("sample_recipes.json", "r") as f:
+    recipes_file = Path(__file__).resolve().parent / "sample_recipes.json"
+    with open(recipes_file, "r", encoding="utf-8") as f:
         recipes = json.load(f)
 
     existing = {recipe.title: recipe for recipe in db.query(models.Recipe).all()}

@@ -57,8 +57,14 @@ def recommend_for_user(user_id: int, top_n: int = 10, db: Session = Depends(get_
     )
 
     if not results:
-        # cold-start fallback: just return top recipes matching diet pref
-        recipes = db.query(models.Recipe).limit(top_n).all()
+        # cold-start fallback: try matching diet pref, otherwise return any recipes
+        q = db.query(models.Recipe)
+        if diet_pref and diet_pref.lower() != "none":
+            filtered = q.filter(models.Recipe.diet_type.ilike(f"%{diet_pref}%")).limit(top_n).all()
+            recipes = filtered if filtered else db.query(models.Recipe).limit(top_n).all()
+        else:
+            recipes = q.limit(top_n).all()
+
         return [
             schemas.RecommendedRecipe(**schemas.RecipeOut.model_validate(r).model_dump(), score=0.0)
             for r in recipes
